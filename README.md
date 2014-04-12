@@ -12,7 +12,7 @@ Ban Blue News
 
 # 安裝
 
-至 [Google play store]() 下載.
+至 [Google play store](https://chrome.google.com/webstore/detail/ban-blue-news/jakppcedlghadmfghdmgkbabgjkcjajl) 下載.
 
 # 授權
 
