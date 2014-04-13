@@ -13,15 +13,18 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.action == "[From cs] ban") {
         banCnt++;
-        var banCntShow;
-        if (banCnt > 99) {
-            banCntShow = "99+";
-        } else {
-            banCntShow = banCnt.toString();
-        }
-        chrome.browserAction.setBadgeText({text: banCntShow});
+        ShowBadgeText();
     }
 });
 
+function ShowBadgeText() {
+    var banCntShow;
+    if (banCnt > 99) {
+        banCntShow = "99+";
+    } else {
+        banCntShow = banCnt.toString();
+    }
+    chrome.browserAction.setBadgeText({text: banCntShow});
+}
 
 
